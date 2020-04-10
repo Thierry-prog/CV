@@ -57,7 +57,7 @@ h3
     padding-bottom:15px; /* marge intérieure en bas */
     font-weight: 500;
     color:black;
-    width : 750px; /*longueur du trait */
+    width : 650px; /*longueur du trait */
 }
 h4
 {
@@ -169,7 +169,7 @@ aside
     flex-direction: column;
     justify-content: space-between;
     background-color:#1560BD; /* couleur de fond aside bleu*/
-    max-width: 20%; /* largeur de l'aside*/
+    width: 20%; /* largeur de l'aside*/
 }
 
 aside h4 
@@ -243,7 +243,11 @@ Les plateformes exotiques sont concernées en premier lieu : navigateurs mobiles
     }
     aside
     {
-    	max-width: 100%;
+    	width: 100%;
+    }
+    h3
+    {
+        width : 100%; /*longueur du trait */
     }
 }
 
@@ -263,7 +267,6 @@ Les plateformes exotiques sont concernées en premier lieu : navigateurs mobiles
     section
     {
         padding:20px;
-
     }
     header
     {
@@ -272,7 +275,7 @@ Les plateformes exotiques sont concernées en premier lieu : navigateurs mobiles
     }
     aside
     {
-        max-width: 100%;
+        width: 95%;
     }
     .exp_form 
     {
@@ -295,6 +298,6 @@ Les plateformes exotiques sont concernées en premier lieu : navigateurs mobiles
     }
     h3
     {
-    	width : 100%;
+        width : 100%; /*longueur du trait */
     }
 }

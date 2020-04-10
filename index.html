@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" /> <!--  indication pour le navigateur le charset (character set soit ensemble caractères) à utiliser pour afficher la page.-->
+        <meta name=viewport content="width=device-width, initial-scale=1.0"/>
+        <!--Utiliser la balise meta viewport pour contrôler la mise en page sur les navigateurs mobiles
+        La propriété width contrôle la taille du viewport. Elle peut être réglée à une valeur précise de pixels, comme width=600, ou bien à la valeur spéciale device-width qui correspond à la largeur de l'écran en pixels CSS à l'échelle 100%. (Il existe les propriétés et valeurs height et device-height correspondantes, qui peuvent être utiles pour les pages contenant des éléments qui changent de taille ou de position en fonction de la hauteur du viewport.)
+        La propriété initial-scale contrôle le niveau de zoom lorsque la page est chargée pour la première fois. Les propriétés maximum-scale, minimum-scale, et user-scalable contrôlent la manière dont les utilisateurs sont autorisés à zoomer ou dézoomer une page.
+        Avec "width=device-width" on demande à ce que le viewport soit le même que la largeur de l'écran.
+        user-scalable=yes => autorise l'utilisateur à zoomer si il le souhaite :--> 
+        <title>CV Thierry Mohamed</title>
+        <script src="https://kit.fontawesome.com/f7591675f1.js" crossorigin="anonymous"></script>
+        <!--Pour lié les icones issues du site fontawesome-->
+        <link rel="stylesheet" href="style.css" />
+        <!--Pour lier la partie HTML avec le CSS, important à retenir !-->
+    </head>
+
+    <body>
+    	<div class="container">
+    		<!--Ca va être tout le gros conteneur qui contient tout-->
+    		<section><!-- Toute la section hors Aside-->
+    			<header>
+    				<h1>Thierry Mohamed</h1>
+                    <h2><span id="trait">En ré</span>orientation Pro</h2>
+                </header>
+
+                <!--Corps du CV, je fais un div pour le titre, la date, la description pour facilité la mise en page sur la partie CSS derrière-->
+                    <h3><i class="fas fa-graduation-cap"></i>Ma formation</h3> <!--les icones issues du site fontawesome sur les titres-->
+
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="far fa-dot-circle"></i>
+                            <p>2020</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>OpenclassRooms</h4>
+                            <p>Prep'Web</p>
+                        </div>
+                    </div>
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="fas fa-circle"></i>
+                            <p>2012-2013</p>
+                            <p> - Clermont-Ferrand</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>Université Blaise Pascal</h4>
+                            <p>1ère année de Licence Informatique</p>
+                        </div>
+                    </div>
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="fas fa-circle"></i>
+                            <p>2011-2012</p>
+                            <p> - Clermont-Ferrand</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>Godefroy de Bouillon</h4>
+                            <p>1ère année de BTS Comptabilité</p>
+                        </div>
+                    </div>
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="fas fa-circle"></i>
+                            <p>2011</p>
+                            <p> - Montluçon</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>Lycée St Vincent</h4>
+                            <p>Bac Professionnel Comptabilité SE</p>
+                        </div>
+                    </div>
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="fas fa-circle"></i>
+                            <p>2009</p>
+                            <p> - Montluçon</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>Lycée St Vincent</h4>
+                            <p>BEP Comptabilité et Secrétariat</p>
+                        </div>
+                    </div>
+
+                    <h3><i class="fas fa-briefcase"></i>Mes expériences Professionnelles</h3>
+
+                    <div class="exp_form"><!--partie gauche des dates et lieux-->
+                        <div class="date">
+                            <i class="far fa-dot-circle"></i>
+                            <p>Etés 2013, 2014 et 2015</p>
+                            <p> - Villepinte (93)</p>
+                        </div>
+                        <div class="exp_form_desc"><!--partie description-->
+                            <h4>APPF</h4>
+                            <p>Ouvrier paysagiste</p>
+                        </div>
+                    </div>
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="fas fa-circle"></i>
+                            <p>Juillet-Août 2011</p>
+                            <p> - Wissous (91)</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>Orly Air Traiteur</h4>
+                            <p>Agent de production</p>
+                        </div>
+                    </div>
+                    <div class="exp_form">
+                        <div class="date">
+                            <i class="fas fa-circle"></i>
+                            <p>Mars-Avril 2011</p>
+                            <p> - Templemore (Irlande)</p>
+                        </div>
+                        <div class="exp_form_desc">
+                            <h4>Walsh & Son</h4>
+                            <p>Stage Mise en rayon</p>
+                        </div>
+                    </div>
+
+                    <div class="recom">
+                        <h3><i class="fas fa-pencil-alt"></i>Mes recommandations</h3>
+                        <div class="recom_desc">
+                            <ul>
+                                <li>MAXIME KIEMAN</li>
+                                <li>Directeur :</li>
+                                <li>Téléphone : </li>
+                                <li>Email : name@email.com</li>
+                            </ul>
+                            <ul>
+                                <li>MAXIME KIEMAN</li>
+                                <li>Directeur :</li>
+                                <li>Téléphone : </li>
+                                <li>Email : name@email.com</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <aside>
+                <!--Aside est toute la partie gauche de couleur bleu, c'est toute cette partie--> 
+
+                <div>
+                    <p><a href="photos/JPEG_20200102_224154__01.jpg"><img src="photos/photo_mini.jpg" alt="Photo d'identité Thierry Mohamed" class="photo_profil" /></a></p>
+                    <h4>Contact</h4>
+
+                    <p>Mon adresse : 8 boulevard louis loucheur 63000 Clermont-Ferrand</p>
+                    <p>Email :<a href="mailto:thierry_mohamed@hotmail.com">Thierry (cliquez sur le prénom)</a></p>
+                    <p>Tel : 06 51 96 93 80</p>
+                    <p><strong>Peut se rendre disponible les soirs et week-end</strong></p>
+
+                    <h4>À propos de moi</h4>
+
+                    <p>Bonjour, je m'appelle Thierry, je suis né un 11 janvier 1991 dans le sud ouest, après une formation en comptabilité, et des expériences dans le métier d'ouvrier paysagiste, j'ai souhaité me reconvertir dans l'informatique, notamment dans le développement web, passionné par les nouvelles technologies, je cherche à progresser quotidiennement.</p>
+                    <p>Nationalité Française</p>
+                    <p>Né le 11.01.1991 à Pau</p>
+                </div>
+
+                <div class="loisir">
+                    <h4>Loisirs</h4>
+                    <div class="loisir_icons">    
+                        <i class="fas fa-laptop"></i>
+                        <i class="fas fa-music"></i>
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                </div>    
+            </aside>
+        </div>
+    </body>
+</html>
+<!--Partie oral :
+
+
+        <p>Je suis titulaire d'un bac Professionnel Comptabilité, au cours de ce cursus, j'ai été en Irlande pendant un mois pour améliorer mon anglais et j'ai été en stage dans une petite boutique de jouets, où j'ai fait de l'accueil client, de la gestion de stock et l'entretien d'un local.<br /></p>
+
+        <p>Derrière, j'ai enchainé sur un BTS Comptabilité, puis j'ai cherché à me diversifier en allant en Fac d'informatique.<br /></p>
+
+        <p>Entre temps, j'ai fait quelques boulots saisonniers comme Agent de Prodction chez Orly air Traiteur, où j'ai dû adapter mon rythme de travail vu que c'était du travail
+        à la chaîne, et travailler ma communication avec le reste de la chaîne.<br /></p>
+
+        <p>J'ai aussi été ouvrier paysagiste à Villepinte où je devais entretenir des terrains extérieurs, j'ai fait de la tonte, désherbage, débrouissaillage..<br />
+        J'ai travaillé dans ce cadre de travail avec des personnes qui avaient des difficultés sociales où j'ai pu continuer à peaufiner mon sens de la communication
+        ainsi que mon travail en équipe.<br /></p>
+
+        <p>Après ma fac d'informatique, j'ai fait une validation de projet professionnel à l'Afpa, puis au cours de cette validation, j'ai effectué un stage dans la boutique
+        AIO informatique où c'était de la maintenance informatique, j'ai appris au cours de ce stage, à diagnostiquer un dysfonctionnement informatique et à le résoudre 
+        (par exemple, l'ordinateur a des pb au démarrage, pour trouver le problème, je pouvais débrancher le disque dur de l'ordinateur , le brancher sur un autre ordinateur,
+        ce qui permettait de voir si cela peut venir du disque dur en lui même ou les pièces de l'ordinateur en question, je pouvais me servir de différents logiciels pour 
+        visualiser aussi sa durée de vie, autre exemple si son ordinateur ralentissait anormalement, des logiciels m'aidaient à nettoyer le PC en question tout en tournant 
+        autour des documents que la personne voudrait sauvegardé sans forcément faire un formatage.)<br /></p>
+
+        <p>J'ai aussi pu changer ou réparer un élément ou un ensemble défectueux (un composant de l'ordinateur par ex) , m'adapter aux besoins du client
+        (si par exemple le client avait besoin de son ordinateur assez rapidement pour son travail, je devais le mettre en priorité), configuré un poste informatique 
+        pour le rendre prêt à l'utilisation quand le client arrive (installer windows par exemple).<br />
+        J'ai continué à faire de l'accueil client dans ce cadre de travail, ce qui rejoint un peu mes boulots précédents au niveau de la communication, on recevait des
+        clients sur place à la boutique, nous faisions aussi du montage PC, si un client voulait passer commande d'un PC en choisissant pièce par pièce, on faisait un devis.
+                    <article>
+                        <h2>Mes compétences</h2>
+
+                            <ul>
+                                <li>Installer et configurer un poste informatique</li>
+                                <li>Assurer les mises à jour logicielles d'un équipement informatique</li>
+                                <li>Saisir et mettre en forme les documents, les transmettre</li>
+                                <li>Conseils aux utilisateurs</li>
+                                <li>Anglais correct</li>
+                            </ul>   
+                    </article> 
+                  Tout ces paragraphes vont servir pour la soutenance -->

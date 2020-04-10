@@ -1,0 +1,300 @@
+/*police, marges, alignements généraux*/
+body 
+{
+    font-family: 'droid_sansregular', 'Arial', 'sans-serif';
+    font-weight: 200;
+    font-style: normal;
+    margin: auto;
+}
+/*si oublie de ce qu'est margin, padding, image pour visualiser les différents écarts de remplissage, les espaces qui forment les marges etc https://developer.mozilla.org/fr/docs/Web/CSS/padding*/
+p
+{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: 'droid_sansregular', 'Arial', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #190707;
+}
+
+.container
+{
+    display: flex; /* on va utiliser flexbox pour indiquer le type d'affichage utilisée pour donner le rendu qu'on veut */
+    flex-direction: row-reverse;
+}
+
+
+/* Mise en page Titres */
+
+h1
+{
+    font-size:4em;
+    margin-top:100px; /* marge extérieure en haut */
+    margin-bottom:0px; /* marge extérieure en bas */
+    font-weight: 200;
+    color: #1560BD
+}
+h2
+{
+    margin-top:0;
+    margin-bottom:4px;
+    font-weight: 400;
+    color: #1560BD;
+}
+#trait
+{
+    max-width : 80px;
+    border-bottom: 0.5px solid #1560BD;
+}
+h3
+{
+    font-size:1.8em;
+    text-transform: uppercase;
+    border-bottom:2px solid #1560BD; /* largeur trait sous le titre */
+    padding-bottom:15px; /* marge intérieure en bas */
+    font-weight: 500;
+    color:black;
+    width : 750px; /*longueur du trait */
+}
+h4
+{
+    font-size:1.3em;
+    text-transform: uppercase;
+    margin-bottom:0;
+    font-weight: 500;
+    width: 95%
+}
+
+
+/*Le corps du CV de droite (section)*/
+
+section 
+{
+    display: flex;
+    flex-direction: column;    
+    margin: auto;  /* pour pas que tout soit collé à l'aside*/
+    padding-right: 0px;
+    width: 80%;
+    padding-left: 40px;
+}
+.far, .fas
+{
+    color:#1560BD; /* couleur des icones à côté des titres */
+}
+.exp_form
+{
+    display: flex;
+}
+.exp_form_desc
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+
+/*Partie dates*/
+
+.date
+{
+    width: 25%;
+    font-weight: 500;
+    display: flex;
+    margin-top:27px;
+}
+.date p
+{
+    margin-top:0px;
+    margin-bottom:3px;
+}
+.date .far, .fas
+{
+    margin-right:10px;
+    font-size:0.7em;
+    margin-top:4px;
+}    
+
+
+/*Partie "Recommandations*/
+
+.recom
+{
+    margin-bottom:5px;
+}
+.recom_desc
+{
+    display: flex;
+    justify-content: space-around;
+    order: 2;
+    width: 50%;
+}
+
+.recom_desc li 
+{
+    margin-bottom:5px;
+}
+
+
+/*mémo
+img
+{
+    float: left;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+} */
+
+/* Pour mettre la photo en rond, (ne pas oublier de garder la bordure avec une couleur, sinon la photo sera invisible)
+mettre son image en "background:url" pour faire le rond
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Partie Gauche Aside + photo + Logos Loisirs*/
+
+.photo_profil
+{
+    border: 1px black solid;
+    border-radius: 50%;  /* pour faire un rond */
+    width: 162px;
+    height:162px;
+    display:block; /* pour centrer la photo */
+    margin-left:auto;
+    margin-right:auto;
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#1560BD; /* couleur de fond aside bleu*/
+    max-width: 20%; /* largeur de l'aside*/
+}
+
+aside h4 
+{
+    background-color:#FFFFFF; /* couleur de fond pour les titres dans l'aside*/
+    padding : 10px;
+    text-align: center;
+    color:#1560BD
+}
+aside p, a 
+{
+    padding: 0 40px 0 40px; /* haut, droite, bas, gauche */
+}
+aside .fas
+{
+    color:#000000;
+    font-size:3em;
+}
+.loisir
+{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+.loisir_icons
+{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 1em;
+}
+
+/*Responsive*/
+
+/*Tablettes*/
+@media screen and (max-width: 1024px) /* on utilise du media queries ici 
+La spécification CSS3 Media Queries définit les techniques pour l'application de feuilles de styles en fonction des périphériques de consultation utilisés pour du HTML. 
+On nomme également cette pratique Responsive Web Design, pour dénoter qu'il s'agit d'adapter dynamiquement le design à l'aide de CSS.
+
+Ces bonnes pratiques permettent d'exploiter encore plus les avantages de la séparation du contenu et de la présentation : 
+l'intérêt est de pouvoir satisfaire des contraintes de dimensions, de résolutions et d'autres critères variés pour améliorer l'apparence graphique et la lisibilité (voire l'utilisabilité) d'un site web. 
+Les plateformes exotiques sont concernées en premier lieu : navigateurs mobiles et tablettes, écrans à faibles résolutions, impression, tv, synthèses vocales, plages braille, etc.*/
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    h1
+    {
+        font-size:3.4em;
+    }
+    section
+    {
+        padding:20px;
+    }
+    .date
+    {
+        width: 50%;
+    }
+    h4
+    {
+        width: 100%;
+    }
+    .recom_desc
+    {
+        width: 100%;
+    }
+    header
+    {
+        text-align: center;
+    }
+    aside
+    {
+    	max-width: 100%;
+    }
+}
+
+/*téléphone*/
+@media screen and (min-width: 320px) and (max-width:480px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    h1
+    {
+        font-size:2.8em;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+    section
+    {
+        padding:20px;
+
+    }
+    header
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    aside
+    {
+        max-width: 100%;
+    }
+    .exp_form 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .date
+    {
+        width: 50%;
+    }
+    h4
+    {
+    width: 100%;
+    }
+    .recom_desc 
+    {
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    h3
+    {
+    	width : 100%;
+    }
+}
